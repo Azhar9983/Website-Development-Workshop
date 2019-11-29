@@ -1,0 +1,3 @@
+to run it on server copy all files and paste it to localhost/...
+
+To swipe across TEST and PRODUCTION . You can change it in lib/config_paytm file 

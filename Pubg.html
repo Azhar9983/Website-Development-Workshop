@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Pubg Registration Form</title>
+<script src="https://unpkg.com/parse/dist/parse.min.js"></script>
+<script type="text/javascript" src="pubg.js"></script>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+<style type="text/css">
+body{
+background-image: url('pubg_background.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  resize: both;
+  overflow: scroll;
+}
+.marquee {
+  background-image: url('logo2.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20%;
+}
+.registration{
+opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+table{
+opacity: 0.9;
+    filter: alpha(opacity=90);
+	background-color: white;
+height: 50%;
+width:50%;
+margin-top: 90px;
+box-shadow: 0px 10px 30px 5px green;
+visibility:hidden;
+	}
+td{
+border:5px groove blue;
+}
+label,input{
+margin-left : 30px;
+width:50%;
+}
+input:hover{
+box-shadow:0px 0px 5px 1px red;
+}
+input:focus{
+box-shadow : 0 0 5px 1px red;
+}
+input[type="submit"]{
+background-color: #008B8B;
+border : 2px;
+height : 60%;
+border-radius : 6px;
+color : white;
+}
+</style>
+</head>
+<body>
+<script type='text/javascript'>alert('Please allow us to open pop-up for successful registration !!');</script>
+<div id="marquee" class="marquee"></div>
+<marquee behavior='alternate'><b><font size='5px' color='white'  >---Date : 09/10/2019------Time :14:00----- Mode : Solo----Map: Erangel-----Third Person View--</font></b></marquee>
+<div class="registartion">
+<table align="center" id="form1">
+<tr>
+<td><label>Email : </label></td>
+<td><input id="email" type="text" placeholder="Enter your email.." required></td></tr>
+<tr>
+<td><label>Mobile No. : </label></td>
+<td><input id="mobile" type="text" placeholder="Enter your Mobile.." required></td></tr>
+<tr>
+<td><label>PUBG Username : </label></td>
+<td><input id="pusername" type="text" placeholder="Enter your Pubg Username.." required></td></tr>
+<tr>	
+<td><label>Address : </label></td>
+<td><input id="address" type="text" placeholder="Enter your Address.." required></td></tr>
+<tr>
+<td><label>City : </label></td>
+<td><input id="city" type="text" placeholder="Enter your City.." required></td></tr>
+
+<tr>
+<td><label>Postal PIN : </label></td>
+<td><input id="pin" type="text" placeholder="Enter your Postal PIN .." required</td></tr>
+
+<tr>
+<td><label>Amount : </label></td>
+<td><input id="amount" type="text"  value="20"></td></tr>
+
+<tr>
+<td></td>
+<td><input id="payment" type="submit" value="Proceed for payment " onclick="pay()"></td></tr>
+</table>
+</div>
+<br>
+<div id='help'align='right'style='visibility : hidden;'>
+<label><font size='5px' color='red'>For any queries, feel free to contact us at :7987191277 / 7869299983 / azharuddinansari232@mail.com </font></label>
+</div>
+<div id='register' align='center'>
+<input  type='button' onclick="validate()" value='Register' style="width: 17%; font-size:25px; font-family:algerian ; align: center-right;  border-radius: 50%;box-shadow: 0px 0px 15px 15px green; border-color:blue; border-size:5px">
+</div>
+</body>
+</html>
